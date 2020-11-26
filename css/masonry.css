@@ -1,0 +1,44 @@
+            /* IMPORTACION DE FUENTE */
+            @font-face {
+                font-family: "Cerebri Sans";
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Light.eot);
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Light.ttf);
+                font-weight: 300;
+                font-style: normal;
+              }
+              
+              @font-face {
+                font-family: "Cerebri Sans";
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Regular.eot);
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Regular.ttf);
+                font-weight: 500;
+                font-style: normal;
+              }
+              
+              @font-face {
+                font-family: "Cerebri Sans";
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Bold.eot);
+                src: url(../fonts/Cerebri-Sans/CerebriSansPro-Bold.ttf);
+                font-weight: 700;
+                font-style: normal;
+              }  
+                        /* CLASES GENERALES */
+            
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Cerebri Sans';
+            }
+            
+            :root{
+              --danger: #f17070;
+              --danger-light: #f38888;
+              --info: #c8cacf;
+              --info-light: #edf0f5;
+              --info-dark: #949ba5 ;
+              --secondary: #f9ebda;
+            }
+
+            /* NAVBAR */
+
+            

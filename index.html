@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="" class="float">
+    <a href="masonry.html" class="float">
         <i class="fas fa-angle-up fa-2x"></i>
     </a>
 
@@ -20,21 +20,26 @@
         <nav>
         <div class="wrapper-navbar">
             <div>
-                <span class="navbar-title">Pisen<span class="nav-color">.</span></span>
+                <label class="navbar-title">Pisen<span class="nav-title-color">.</span></label>
             </div>
             <div class="navbar-links">
-                <a href="" class="actived">Home</a>
+                <a href="#" class="actived">Home</a>
                 <a href="" >Features</a>
                 <a href="">About Us</a>
                 <a href="">Contact</a>
             </div>
             <div class="navbar-icon">
-                <i class="fas fa-search"></i>
+                <a href=""><i class="fas fa-search"></i></a>
                 <span class="line-icon">|</span>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fas fa-basketball-ball"></i>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fas fa-basketball-ball"></i></a>
+                </div>
+                <div class="navbar-menu-icon">
+                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                </div>
             </div>
         </div>
         </nav>
@@ -62,8 +67,8 @@
     <section class="slide">
         <div class="wrapper">
             <div class="slide-img">
-                <div class="slide-arrow slide-left slide-actived"><i class="fas fa-chevron-left"></i></div>
-                <div class="slide-arrow slide-right"><i class="fas fa-chevron-right"></i></div>
+                <a href=""><div class="slide-arrow slide-actived"><i class="fas fa-chevron-left"></i></div></a>
+                <a href=""><div class="slide-arrow "><i class="fas fa-chevron-right"></i></div></a>    
             </div>
 
             <div class="wrapper-info">
@@ -126,15 +131,16 @@
 
     <section class="audio">
         <div class="wrapper">
-            <div class="audio-img">
-                <div class="play-icon"><i class="fas fa-play"></i></div>
-                <div class="audio-time">
-                    <div class="time">
-                        <div>00:17</div>
-                        <div class="bg-time">
-                            <div class="time-color"></div>
-                        </div>
-                        <div>01:13</div>
+            <div class="audio">
+                <div class="audio-img">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                    <div class="audio-time">
+                        <div class="time">
+                            <p>00:17</p>
+                            <div class="bg-time">
+                                <div class="time-color"></div>
+                            </div>
+                        <p>01:13</p>
                     </div>
                 </div>
                 <div class="audio-volume">
@@ -143,10 +149,11 @@
                     </div>
                     <div class="bg-volume">
                         <div class="volume-color"></div>
-                    </div>
-                    
+                    </div>    
                 </div>
+                
             </div>
+        </div>
 
             <div class="wrapper-info">
                 <h2>How to View Breast Cancer Survival Rates</h2> 
@@ -245,7 +252,10 @@
                     <input type="email" name="email" id="" placeholder="Enter Your Mail">
                     <a type="submit" href=""><i class="fas fa-paper-plane"></i></a>
                     </input>
-                    <p class="footer-subscribe-info">I've read and accept the Privacy Policy</p>
+                    <div class="check-grid">
+                        <input type="checkbox" name="" id="check-privacy">
+                        <p class="footer-subscribe-info">I've read and accept the Privacy Policy</p>
+                    </div>
                     <p class="copyright">Copyright ©2019 Pisen Blog</p>
                 </div>
             </div>
