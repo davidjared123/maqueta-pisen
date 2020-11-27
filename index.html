@@ -9,6 +9,8 @@
   <link href="./fonts/fontawesome/fontawesome.css" rel="stylesheet">
   <link href="./fonts/fontawesome/brands.css" rel="stylesheet">
   <link href="./fonts/fontawesome/solid.css" rel="stylesheet">
+
+  <script src="./js/menu.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
             <div>
                 <label class="navbar-title">Pisen<span class="nav-title-color">.</span></label>
             </div>
-            <div class="navbar-links">
+            <div class="navbar-links" id="nav">
                 <a href="#" class="actived">Home</a>
                 <a href="" >Features</a>
                 <a href="">About Us</a>
@@ -37,8 +39,8 @@
                     <a href=""><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fas fa-basketball-ball"></i></a>
                 </div>
-                <div class="navbar-menu-icon">
-                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                <div class="navbar-menu-icon" onclick="actived()">
+                    <a><i class="fas fa-ellipsis-v"></i></a>
                 </div>
             </div>
         </div>
@@ -209,16 +211,16 @@
     <section class="footer"> 
         <div class="footer-wrapper">
             <div class="footer-cards-grid">
-                <div class="footer-card-gray"></div>
-                <div class="footer-card">
+                <div class="footer-card"></div>
+                <div class="footer-card footer-card-danger">
                     <div>
                         <i class="fab fa-instagram fa-2x"></i>
                         <p class="ig-user">Fisen_instagram</p>
                     </div>
                 </div>
-                <div class="footer-card-gray"></div>
-                <div class="footer-card-light"></div>
-                <div class="card-footer-gray"></div>
+                <div class="footer-card"></div>
+                <div class="footer-card footer-card-light"></div>
+                <div class="footer-card"></div>
             </div>
 
             <div class="footer-grid">
@@ -250,7 +252,7 @@
                 <div class="footer-subscribe">
                     <h3>Subscribe To Our Mailing List</h3>
                     <input type="email" name="email" id="" placeholder="Enter Your Mail">
-                    <a type="submit" href=""><i class="fas fa-paper-plane"></i></a>
+                        <a type="submit" href=""><i class="fas fa-paper-plane"></i></a>
                     </input>
                     <div class="check-grid">
                         <input type="checkbox" name="" id="check-privacy">
@@ -261,6 +263,8 @@
             </div>
         </div>
     </section>
+    
+
     
 </body>
 </html>
