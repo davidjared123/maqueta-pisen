@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Cerebri Sans";
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Light.eot);
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Cerebri Sans";
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Regular.eot);
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Cerebri Sans";
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Bold.eot);
+    src: url(../fonts/Cerebri-Sans/CerebriSansPro-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+  }  
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cerebri Sans';
+}
+
+:root{
+    --danger: #f17070;
+    --danger-light: #f38888;
+    --info: #c8cacf;
+    --info-light: #edf0f5;
+    --info-dark: #949ba5 ;
+    --secondary: #f9ebda;
+  }
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .wrapper-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #949ba5; */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    height: 60px;
+    padding: 0 4%;
+  }
+
+/* navbar logo  */
+.navbar-title{
+  font-size: 25px;
+  font-weight: 700;
+}
+  
+.nav-title-color{
+  color: var(--danger) !important;
+}
+
+/* navbar links */
+.navbar-links li{
+    list-style: none;
+    margin  : 0px 10px;
+}
+.navbar-links > li{
+    display: inline-block;
+}
+.navbar-links{
+    position: relative;
+}
+.navbar-links > li > a{
+    /* display: block; */
+    line-height: 60px;
+}
+
+/* chlidren links  */
+.children{
+    display: none;
+}
+.navbar-links li:hover .children{
+    display: grid;
+    background-color: white;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+}
+.navbar-links .children li{
+    padding: 10px 10px;
+    margin: 0;
+    padding: 10px 30px 10px 15px;
+}
+.navbar-links .children li:hover{
+    background-color: var(--info-light);   
+}
+
+/* navbar iconos */
+.navbar-icon{
+    display: flex;
+  }
+  .navbar-icon a{
+    color: black;
+    text-decoration: none;
+  }
+  .navbar-icon i{
+    margin-left: 10px;
+  }
+  .line-icon{
+    margin-left: 10px;
+    display: none;
+  }
+  .social-icon{
+    /* background-color: red; */
+    display: none;
+  }
+  
+  .actived{
+    border-bottom: 2px solid var(--danger);
+  }
+
+  /* main shop */
+  .main-shop-img{
+    margin-top: 80px;
+    width: 100%;
+    height: 35vh;
+    background-color: var(--info);
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .main-shop-info{
+    padding: 0px 45px 0px 20px;
+  }
+  .main-shop-info h1{
+    margin: 0;
+    padding: 0;
+  }
+  .main-shop-info a{
+    color: #edf0f5;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--danger);
+    margin-top: 55px;
+  }
+
+.main-shop-btn{
+  margin-top: 35px;
+}
+
+    /* SECTION SHOPPING  */
+.shopping{
+  margin-top: 25px;
+}
+.shopping-grid{
+  display: grid;
+  grid-template-areas: 
+    'menu menu header header header'
+    'card card card card card'
+    'btn btn btn btn btn'
+  ;
+  margin-bottom: 25px;
+}
+.shopping-bar{
+  /* height: 100vh; */
+  background-color: #f17070;
+  grid-area: menu;
+}
+
+.shopping-filter{
+  height: 50px;
+  background-color: #949ba5;
+  grid-area: header;
+}
+.shopping-product-grid{
+  min-height: 100vh;
+  background-color: aqua;
+  grid-area: card;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap:5px;
+}
+.product-card{
+  height: 200px;
+  background-color: var(--info);
+}
+.products-btn{
+  grid-area: btn;
+  /* background-color: var(--danger); */
+  /* text-align: center; */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products-btn a{
+  text-decoration: none;
+  color: white;
+}
+.products-btn a > p{
+  background-color: var(--danger);
+  padding: 15px 30px;
+}
+
+@media (min-width: 450px){
+  .shopping-product-grid{
+    grid-template-columns: auto auto;
+    grid-gap:5px;
+  }
+}
+
+@media (min-width: 740px){
+  .shopping-grid{
+    display: grid;
+    grid-template-areas: 
+      'menu header header header header'
+      'menu card card card card'
+      'btn btn btn btn btn'
+    ;
+  }
+  .shopping-product-grid{
+    
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:5px;
+  }
+  .product-card{
+    height: 310px;
+    background-color: var(--info);
+  }
+}

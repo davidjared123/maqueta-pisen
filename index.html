@@ -13,23 +13,42 @@
   <script src="./js/menu.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <a href="masonry.html" class="float">
+<body onscroll="onScrollTop()">
+    <a onclick="scrollUp()" class="float">
         <i class="fas fa-angle-up fa-2x"></i>
     </a>
 
     <section class="navbar-section">
-        <nav>
-        <div class="wrapper-navbar">
+        <nav >
+        <div class="wrapper-navbar" id="section1">
             <div>
                 <label class="navbar-title">Pisen<span class="nav-title-color">.</span></label>
             </div>
-            <div class="navbar-links" id="nav">
-                <a href="#" class="actived">Home</a>
-                <a href="" >Features</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </div>
+            <ul class="navbar-links" id="nav">
+                <li><a class="actived" href="javascript:void(0)">Home</a>
+                    <ul class="children">
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 2</a></li>
+                        <li><a href="">Home 3</a></li>
+                        <li><a href="">Home 4</a></li>
+                        <li><a href="">Home 5</a></li>
+                        <li><a href="">Home 6</a></li>
+                        <li><a href="">Home 7</a></li>
+                        <li><a href="">Home 8</a></li>
+                        <li><a href="">Home 9</a></li>
+                        <li><a href="">Home 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Features</a>
+                    <ul class="children">
+                        <li><a href="">Shop 1 Column</a></li>
+                        <li><a href="">Shop 2 Column</a></li>
+                        <li><a href="">Shop 3 Column</a></li>
+                    </ul>
+                </li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
             <div class="navbar-icon">
                 <a href=""><i class="fas fa-search"></i></a>
                 <span class="line-icon">|</span>
@@ -47,7 +66,7 @@
         </nav>
     </section>
 
-    <section class="main">
+    <section class="main" >
         <div class="wrapper">
             <div class="main-img">    
             </div>
@@ -254,6 +273,7 @@
                     <input type="email" name="email" id="" placeholder="Enter Your Mail">
                         <a type="submit" href=""><i class="fas fa-paper-plane"></i></a>
                     </input>
+                    <br>
                     <div class="check-grid">
                         <input type="checkbox" name="" id="check-privacy">
                         <p class="footer-subscribe-info">I've read and accept the Privacy Policy</p>
@@ -265,6 +285,8 @@
     </section>
     
 
-    
+    <script>
+        
+    </script>
 </body>
 </html>
